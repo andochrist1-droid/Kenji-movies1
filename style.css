@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fond noir */
+    color: #f0f0f0; /* Texte gris très clair */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-header {
+    background-color: #1a1a1a;
+    padding: 20px 50px;
+    border-bottom: 2px solid #ff4500; /* Orange dynamique */
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: center;
+}
+
+.site-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ff4500;
+    transition: color 0.3s ease;
+}
+
+.site-title:hover {
+    color: #fff;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 50px 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero-title {
+    font-size: 3em;
+    color: #fff;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.featured-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    text-align: center;
+    /* Nouvelle largeur pour 2 colonnes */
+    flex-basis: calc(50% - 15px);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Effet de soulèvement */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #ff4500;
+    margin: 0 0 10px 0;
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.card-link {
+    display: inline-block;
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #fff;
+}
+
+.main-footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 2px solid #ff4500;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ff4500;
+    border-radius: 50px;
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput::placeholder {
+    color: #888;
+}
+
+#searchInput:focus {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+#searchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: -40px;
+    color: #f0f0f0;
+    z-index: 10;
+}
+
+/* Style pour l'année du film */
+.movie-year {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(255, 69, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
